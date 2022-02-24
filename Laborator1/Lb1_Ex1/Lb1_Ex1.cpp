@@ -25,7 +25,7 @@ int main()
     char numar[100];
     int sum = 0;
 
-    while (fgets(numar, 100, fisier))
+    while (fgets(numar, 100, fisier) != 0)
     {
         int nr;
         nr = ConvertCharToInt(numar);
