@@ -34,7 +34,8 @@ char* Class::getName()
 
 void Class::setMathGrade(float input)
 {
-	this->MathGrade = input;
+	if(input >= 0 && input <= 10)
+		this->MathGrade = input;
 }
 
 float Class::getMathGrade()
@@ -44,7 +45,8 @@ float Class::getMathGrade()
 
 void Class::setHistGrade(float input)
 {
-	this->HistGrade = input;
+	if (input >= 0 && input <= 10)
+		this->HistGrade = input;
 }
 
 float Class::getHistGrade()
@@ -54,7 +56,8 @@ float Class::getHistGrade()
 
 void Class::setEnglGrade(float input)
 {
-	this->EnglGrade = input;
+	if (input >= 0 && input <= 10)
+		this->EnglGrade = input;
 }
 
 float Class::getEnglGrade()
