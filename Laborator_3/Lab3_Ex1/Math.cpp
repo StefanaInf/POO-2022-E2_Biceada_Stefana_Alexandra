@@ -54,6 +54,7 @@ int Math::Add(int count, ...) {
 }
 
 char* Math::Add(const char* sir1, const char* sir2) {
+	if (sir1 == nullptr || sir2 == nullptr) return nullptr;
 	char* word = nullptr;
 	int s = 0;
 	s = strlen(sir1) + strlen(sir2) + 1;

@@ -100,3 +100,4 @@ void Canvas::Clear() {
 			this->matrix[i][j] = ' ';
 	}
 }
+
