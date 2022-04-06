@@ -1,0 +1,2 @@
+enum { Rain, Sunny, Snow };
+
