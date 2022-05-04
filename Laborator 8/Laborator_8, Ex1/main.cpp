@@ -16,7 +16,6 @@ bool isSep(char c) {
 class Compare {
 public:
 	bool operator() (std::pair<std::string, int> p1, std::pair<std::string, int> p2) {
-		//comparam nr de aparitii ale fiecarui cuvant
 		if (p1.second < p2.second)  return true;
 		if (p1.second > p2.second)	return false;
 		if (p1.first > p2.first) return true;
