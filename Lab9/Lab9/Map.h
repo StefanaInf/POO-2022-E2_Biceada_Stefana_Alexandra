@@ -15,6 +15,9 @@ public:
 	K getKey(int index);
 	V getValue(int index);
 
+	Pair<K, V>* begin();
+	Pair<K, V>* end();
+
 	void Set(const K& key, const V& val); //method that associates the value to a key
 	bool Get(const K& key, V& value); //method that will copy the value from key into the value parameter and return ture
 	int Count(); //method that returns the number of elements in the map
@@ -156,3 +159,12 @@ V Map<K, V>::getValue(int index) {
 	return pairs[index].value;
 }
 
+template<class K, class V>
+Pair<K, V>* Map<K,V>::begin() {
+	return &pairs[0];
+}
+
+template<class K, class V>
+Pair<K, V>* Map<K, V>::end() {
+	return &pairs[number_elements];
+}
